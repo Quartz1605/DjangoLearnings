@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import home
+
+
+#Uske pehle slash daalne ki jarurat nahi hai wo apne aap provide hota hai.
+# Basically usse import kiya and then created a url for it.
 
 urlpatterns = [
+    path('home/',home),
     path('admin/', admin.site.urls),
 ]
